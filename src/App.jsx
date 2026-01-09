@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Heart, MapPin, Calendar, Clock, Music, Play, Pause, ChevronDown, Instagram, Send, X, ChevronLeft, ChevronRight, Star, Cloud, Map, User, MessageCircle, CreditCard, Copy, Check, Upload, Reply, CalendarPlus } from 'lucide-react';
 
 // API Base URL - ganti dengan URL backend kamu setelah deploy
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+// Ganti URL ini dengan URL dari Render.com setelah deploy
+const API_URL = 'https://weddinvitation-1-dc-server.onrender.com';
 
 // --- ANIMATION HOOK ---
 const useOnScreen = (options) => {
@@ -1034,9 +1035,9 @@ export default function App() {
                         {/* DECO FRAME */}
                         <img src={DECORATIONS.deco5} className="absolute -bottom-4 -left-8 w-32 z-20 pointer-events-none animate-sway-slow" alt="" />
                      </div>
-                     <h3 className="font-serif text-2xl text-[#1A365D] font-bold mb-1">Etin</h3>
+                     <h3 className="font-serif text-2xl text-[#1A365D] font-bold mb-1">Etin Sutinah</h3>
                      <p className="font-body text-xs text-[#C5A059] font-bold tracking-widest mb-3 uppercase">The Bride</p>
-                     <p className="font-body text-sm text-[#1A365D]/70">Putra Bpk. Joko & Ibu Tina</p>
+                     <p className="font-body text-sm text-[#1A365D]/70">Putri Pertama Bpk Anim & Ibu Siti Masitoh</p>
                      <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                          <a href="#" className="inline-flex items-center gap-1 text-xs text-[#1A365D] border-b border-[#C5A059] pb-1"><Instagram size={12} /> @etin</a>
                      </div>
@@ -1060,9 +1061,9 @@ export default function App() {
                         {/* DECO FRAME */}
                         <img src={DECORATIONS.deco6} className="absolute -bottom-4 -right-8 w-32 z-20 pointer-events-none animate-sway-medium" alt="" />
                      </div>
-                     <h3 className="font-serif text-2xl text-[#1A365D] font-bold mb-1">Aji</h3>
+                     <h3 className="font-serif text-2xl text-[#1A365D] font-bold mb-1">Tri Aji Hening Wibowo</h3>
                      <p className="font-body text-xs text-[#C5A059] font-bold tracking-widest mb-3 uppercase">The Groom</p>
-                     <p className="font-body text-sm text-[#1A365D]/70">Putra Bpk. Hendra & Ibu Susi</p>
+                     <p className="font-body text-sm text-[#1A365D]/70">Putra Pertama dari Bpk Suyadi & Ibu Suwarni</p>
                      <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                          <a href="#" className="inline-flex items-center gap-1 text-xs text-[#1A365D] border-b border-[#C5A059] pb-1"><Instagram size={12} /> @aji</a>
                      </div>
@@ -1106,14 +1107,13 @@ export default function App() {
                       <div className="space-y-6 text-[#1A365D]/80 font-body leading-relaxed text-sm md:text-base">
                         <p>
                             <span className="text-4xl float-left mr-2 font-script text-[#C5A059] leading-none">K</span>
-                            ami dipertemukan sejak bangku SMK, satu kelas namun tak pernah benar-benar saling menyapa. 
-                            Beberapa tahun setelah lulus, semesta kembali mempertemukan kami melalui sebuah DM Story 
-                            sederhana yang dikirim Aji kepada Etin.
+                            Kini, dengan doa dan restu, kami melangkah bersama, menjadikan perjalanan ini sebagai ibadah sepanjang hayat.
+                          </p>
+                          <p>
+                            Kami dipertemukan sejak bangku SMK, satu kelas namun tak pernah benar-benar saling menyapa. Beberapa tahun setelah lulus, semesta kembali mempertemukan kami melalui sebuah DM Story sederhana yang dikirim Aji kepada Etin.
                         </p>
                         <p>
-                            Meski perjalanan ini tidak mudah dan sempat terpisah, Qadarullah Allah menyatukan kembali 
-                            langkah kami dengan niat yang lebih baik, hingga terlaksananya acara lamaran pada bulan November. 
-                            Insya Allah, pada tanggal 25 Januari 2026, kami akan melangsungkan pernikahan.
+                            Meski perjalanan ini tidak mudah dan sempat terpisah, Qadarullah Allah menyatukan kembali langkah kami dengan niat yang lebih baik, hingga terlaksananya acara lamaran pada bulan November. Insya Allah, pada tanggal 25 Januari 2026, kami akan melangsungkan pernikahan. Kini, dengan doa dan restu, kami melangkah bersama, menjadikan perjalanan ini sebagai ibadah sepanjang hayat.
                         </p>
                       </div>
                    </div>
@@ -1161,11 +1161,11 @@ export default function App() {
                           </div>
                           <div className="flex flex-col items-center gap-1">
                              <Clock size={20} className="text-[#C5A059] mb-1" />
-                             <span>08.00 WIB - Selesai</span>
+                             <span>10:00 - 12.00 WIB</span>
                           </div>
                           <div className="flex flex-col items-center gap-1">
                              <MapPin size={20} className="text-[#C5A059] mb-1" />
-                             <span className="text-sm px-4">Masjid Raya Jakarta Selatan</span>
+                             <span className="text-sm px-4">Kediaman mempelai wanita<br/>Kp. Pangradin 02, Ds. Pangradin,<br/>Jasinga, Kab. Bogor</span>
                           </div>
                        </div>
                     </div>
@@ -1181,11 +1181,11 @@ export default function App() {
                           </div>
                           <div className="flex flex-col items-center gap-1">
                              <Clock size={20} className="text-[#C5A059] mb-1" />
-                             <span>11.00 - 13.00 WIB</span>
+                             <span>13.00 WIB - selesai</span>
                           </div>
                           <div className="flex flex-col items-center gap-1">
                              <MapPin size={20} className="text-[#C5A059] mb-1" />
-                             <span className="text-sm px-4">Balai Kartini Hall</span>
+                             <span className="text-sm px-4">Kediaman mempelai wanita<br/>Kp. Pangradin 02, Ds. Pangradin,<br/>Jasinga, Kab. Bogor</span>
                           </div>
                        </div>
                     </div>
